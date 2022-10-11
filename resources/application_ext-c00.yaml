@@ -1,0 +1,18 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ext-c00
+  namespace: argocd
+spec:
+  destination:
+    namespace: swift-config-ocp
+    server: http://cluster-rocklor:8001
+  project: default
+  source:
+    path: .
+    repoURL: https://github.com/ben-obrien/ap-ocp-config-ext
+    targetRevision: main
+  syncPolicy:
+    automated:
+      selfHeal: true
