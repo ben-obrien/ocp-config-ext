@@ -6,3 +6,4 @@ namespace: swift-config-ocp
 
 resources:
 - resources/configmap_helloworld.yaml
+- resources/namespace_swift-config-ocp.yaml
