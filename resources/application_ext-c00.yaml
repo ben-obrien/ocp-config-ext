@@ -11,7 +11,7 @@ spec:
   project: default
   source:
     path: .
-    repoURL: https://github.com/ben-obrien/ap-ocp-config-ext
+    repoURL: https://github.com/ben-obrien/ocp-config-ext
     targetRevision: main
   syncPolicy:
     automated:
