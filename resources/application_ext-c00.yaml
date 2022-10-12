@@ -10,7 +10,7 @@ spec:
     namespace: swift-config-ocp
   project: default
   source:
-    path: .
+    path: ext-c00
     repoURL: https://github.com/ben-obrien/ocp-config-ext
     targetRevision: main
   syncPolicy:
