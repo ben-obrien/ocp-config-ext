@@ -1,0 +1,18 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: common
+  namespace: argocd
+spec:
+  destination:
+    name: rocklor
+    namespace: swift-config-ocp
+  project: default
+  source:
+    path: common
+    repoURL: https://github.com/ben-obrien/ocp-config-ext
+    targetRevision: main
+  syncPolicy:
+    automated:
+      selfHeal: true

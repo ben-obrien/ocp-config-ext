@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ext-c00
+  name: c00
   namespace: argocd
 spec:
   destination:
@@ -10,7 +10,7 @@ spec:
     namespace: swift-config-ocp
   project: default
   source:
-    path: ext-c00
+    path: c00
     repoURL: https://github.com/ben-obrien/ocp-config-ext
     targetRevision: main
   syncPolicy:

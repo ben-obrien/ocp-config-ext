@@ -1,0 +1,15 @@
+---
+apiVersion: vmware.swift.com/v1alpha1
+kind: Category
+metadata:
+  name: ocp-availability-zones
+spec:
+  category_description: "OpenShift Container Platform availability zones"
+  category_name: ocp-availability-zones
+  state: present
+  secret_references:
+    vcenter:
+      api_version: v1
+      kind: Secret
+      namespace: swift-config-ocp
+      resource_name: vcenter-external-vcsim-rocklor
