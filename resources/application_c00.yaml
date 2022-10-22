@@ -6,7 +6,7 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    name: rocklor
+    name: decklor
     namespace: swift-config-ocp
   project: default
   source:
